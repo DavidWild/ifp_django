@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/IFP_Django.iml" filepath="$PROJECT_DIR$/.idea/IFP_Django.iml" />
+      <module fileurl="file:///Applications/MAMP/htdocs/IFP_static/.idea/IFP_static.iml" filepath="/Applications/MAMP/htdocs/IFP_static/.idea/IFP_static.iml" />
+    </modules>
+  </component>
+</project>
+

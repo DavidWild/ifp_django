@@ -1,0 +1,20 @@
+{% extends "admin/base_site.html" %}
+{% load i18n l10n %}
+
+{% block content %}
+<form action="" method="post">{% csrf_token %}
+    <p>How many tests would you like to generate for each selected test (maximum of 10)?</p>
+    <p>(Be aware that tests can take some time to generate.  If the server is busy, the test generation will be scheduled.)</p>
+
+
+
+    <div>
+    {% for obj in queryset %}
+    <input type="hidden" name="{{ action_checkbox_name }}" value="{{ obj.pk|unlocalize }}" />
+    {% endfor %}
+    <input type="number" name="quantity" value="1" min="1" max="10">
+    <input type="hidden" name="action" value="download_pdf" />
+    <input type="submit" value="CreateTest" />
+    </div>
+</form>
+{% endblock %}

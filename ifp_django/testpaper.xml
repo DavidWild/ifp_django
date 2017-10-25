@@ -1,0 +1,18 @@
+<exampaper>
+    <question questionscanspanpages='no' solutionscanspanpages='no'>
+        <questiontext>       <![CDATA[$0*x = coeff(0,x)$ \\
+
+$1*x = coeff(1,x)$ \\
+
+$-1*x = coeff(-1,x)$ \\
+
+$a=a1$, $b=b1$, $c=c1$ \\
+$a1*x^2+b1*x+c1=coeff(eval(a1),x^2,eval(b1),x,eval(c1),1)$]]></questiontext>
+        <solution>       <![CDATA[]]></solution>
+        <randoms>
+            <random name="a1" issystem="false" expression="random(range(0,1,1))"></random>
+            <random name="b1" issystem="false" expression="random(range(0,1,1))"></random>
+            <random name="c1" issystem="false" expression="random(range(0,1,1))"></random>
+        </randoms>
+        <pictures></pictures>
+    </question>

@@ -1,0 +1,18 @@
+{% extends "admin/base_site.html" %}
+{% load i18n l10n %}
+
+{% block content %}
+<form action="" method="post">{% csrf_token %}
+    <p>It has not been possible to print your test.  Check your configurations and try again</p>
+
+
+
+    <div>
+    {% for obj in queryset %}
+    <input type="hidden" name="{{ action_checkbox_name }}" value="{{ obj.pk|unlocalize }}" />
+    {% endfor %}
+
+    <input type="submit" value="Okay" />
+    </div>
+</form>
+{% endblock %}
