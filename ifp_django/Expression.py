@@ -17,7 +17,7 @@ import Randoms
 from definitions import tokenRandomiser, tokenRandomRange, tokenRandomString, \
     tokenEvaluate, tokenScientificFunctionName
 
-print('tobeornottobe')
+
 
 class NoPictureException(Exception):
     pass
